@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-Way Traffic Simulation</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>2-Way Traffic Simulation</h1>
+
+    <div class="simulation">
+
+        <div class="road horizontal">
+            <div class="lane lane-left"></div>
+            <div class="lane lane-right"></div>
+        </div>
+
+        <div class="road vertical">
+            <div class="lane lane-up"></div>
+            <div class="lane lane-down"></div>
+        </div>
+
+        <div class="intersection"></div>
+
+        <div class="traffic-light tl">
+            <div id="red1" class="light red"></div>
+            <div id="yellow1" class="light"></div>
+            <div id="green1" class="light"></div>
+        </div>
+
+        <div class="traffic-light tr">
+            <div id="red2" class="light red"></div>
+            <div id="yellow2" class="light"></div>
+            <div id="green2" class="light"></div>
+        </div>
+
+        <div class="traffic-light bl">
+            <div id="red3" class="light"></div>
+            <div id="yellow3" class="light"></div>
+            <div id="green3" class="light green"></div>
+        </div>
+
+    
+        <div class="traffic-light br">
+            <div id="red4" class="light"></div>
+            <div id="yellow4" class="light"></div>
+            <div id="green4" class="light green"></div>
+        </div>
+        <div id="carContainer"></div>
+
+    </div>
+    <div class="controls">
+        <button id="startBtn">Start</button>
+        <button id="stopBtn">Stop</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#6abf4b;
+    overflow:hidden;
+    text-align:center;
+}
+
+h1{
+    margin:15px 0;
+    color:#222;
+    font-size:55px;
+}
+
+.simulation{
+    position:relative;
+    width:100vw;
+    height:90vh;
+    overflow:hidden;
+}
+
+
+
+.horizontal{
+    position:absolute;
+    top:50%;
+    left:0;
+    width:100%;
+    height:180px;
+    background:#444;
+    transform:translateY(-50%);
+    border-top:5px solid white;
+    border-bottom:5px solid white;
+}
+
+.vertical{
+    position:absolute;
+    left:50%;
+    top:0;
+    width:180px;
+    height:100%;
+    background:#444;
+    transform:translateX(-50%);
+    border-left:5px solid white;
+    border-right:5px solid white;
+}
+
+
+.intersection{
+    position:absolute;
+    width:180px;
+    height:180px;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    background:#3c3c3c;
+    z-index:5;
+}
+
+.horizontal::before{
+    content:"";
+    position:absolute;
+    top:88px;
+    left:0;
+    width:100%;
+    border-top:4px dashed white;
+}
+
+.vertical::before{
+    content:"";
+    position:absolute;
+    left:88px;
+    top:0;
+    height:100%;
+    border-left:4px dashed white;
+}
+
+
+.traffic-light{
+    position:absolute;
+    width:42px;
+    background:#222;
+    padding:6px;
+    border-radius:10px;
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+    z-index:100;
+    box-shadow:0 0 10px rgba(0,0,0,.4);
+}
+
+
+.tl{
+    top:calc(50% - 120px);
+    left:calc(50% - 120px);
+}
+
+
+.tr{
+    top:calc(50% - 120px);
+    left:calc(50% + 80px);
+}
+
+.bl{
+    top:calc(50% + 80px);
+    left:calc(50% - 120px);
+}
+
+.br{
+    top:calc(50% + 80px);
+    left:calc(50% + 80px);
+}
+
+.light{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    background:#555;
+}
+
+.red{
+    background:red;
+}
+
+.yellow{
+    background:yellow;
+}
+
+.green{
+    background:limegreen;
+}
+
+#carContainer{
+    position:absolute;
+    inset:0;
+    z-index:200;
+    pointer-events:none;
+}
+
+.car{
+    position:absolute;
+    width:50px;
+    height:28px;
+    object-fit:contain;
+    transform-origin: center center;
+}
+
+.controls{
+    margin-top:10px;
+}
+
+button{
+    padding:10px 25px;
+    border:none;
+    border-radius:8px;
+    background:#0066ff;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    margin:0 10px;
+}
+
+button:hover{
+    background:#004fd6;
+}
+
+.horizontal,
+.vertical,
+.intersection{
+    box-shadow:0 0 10px rgba(0,0,0,.3);
+}
+#verticalRoad{
+    width:220px;
+}
