@@ -28,10 +28,10 @@ let horizontalGreen = true;
 
 const CAR_IMAGES = [
 
-    "images/car.jpeg",
-    "images/car2.jpeg",
-    "images/car3.jpg",
-    "images/bike.jpeg"
+    "car.jpeg",
+    "car2.jpeg",
+    "car3.jpeg",
+    "bike.jpeg"
 
 ];
 window.addEventListener("resize", () => {
