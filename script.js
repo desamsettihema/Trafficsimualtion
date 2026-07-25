@@ -30,7 +30,7 @@ const CAR_IMAGES = [
 
     "car.jpeg",
     "car2.jpeg",
-    "car3.jpeg",
+    "car3.jpg",
     "bike.jpeg"
 
 ];
